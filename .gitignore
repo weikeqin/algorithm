@@ -1,0 +1,30 @@
+*.class
+*.log
+
+# idea
+.idea
+*.iml
+*.iws
+*.ipr
+
+# eclipse
+.project
+.classpath
+.settings
+.apt_generated
+.factorypath
+
+.git
+/target
+/log
+/logs
+*.log
+*.swp
+
+# mac
+.DS_Store
+
+# other
+/out
+
+
