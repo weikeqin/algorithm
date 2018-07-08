@@ -45,15 +45,12 @@ public class BubbleSort {
      * @param arr
      */
     public static void bubbleSort(int[] arr) {
-        int temp = 0;
         //int count = 0;
         int arrLength = arr.length;
         // 比多少趟
-        int x = arrLength - 1;
-        for (int i = 0; i < x; i++) {
+        for (int i = 0; i < arrLength - 1; i++) {
             // 一趟比多少次
-            int y = arrLength - i - 1;
-            for (int j = 0; j < y; j++) {
+            for (int j = 0; j < arrLength - i - 1; j++) {
 
                 // 相邻元素比较，小的往前放，大的往后放
                 if (arr[j] > arr[j + 1]) {
@@ -90,16 +87,13 @@ public class BubbleSort {
      * @param arr
      */
     public static void bubbleSortImprove(int[] arr) {
-        int temp = 0;
         int arrLength = arr.length;
         // 比多少趟
-        int x = arrLength - 1;
         boolean didSwap = false;
-        for (int i = 0; i < x; i++) {
+        for (int i = 0; i < arrLength - 1; i++) {
 
             // 一趟比多少次
-            int y = arrLength - i - 1;
-            for (int j = 0; j < y; j++) {
+            for (int j = 0; j < arrLength - i - 1; j++) {
                 // 相邻元素比较，小的往前放，大的往后放
                 if (arr[j] > arr[j + 1]) {
                     swap(arr, j, j+1);
